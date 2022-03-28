@@ -5,6 +5,7 @@
   </nav>
   <router-view/>
   <h3>{{ name }}</h3>
+  <h5>{{ test }}</h5>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-success">Success</button>
@@ -20,7 +21,8 @@
 export default {
   data () {
     return {
-      name: process.env.VUE_APP_NAME
+      name: process.env.VUE_APP_NAME,
+      test: '我就測'
     }
   }
 }
